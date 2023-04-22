@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- Header html code start  -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h2>Interactive</h2>
+                <h3>Geometry Genius</h3>
+            </div>
+            <button id="blog-btn" class="header-btn btn">Blog</button>
+        </nav>
+    </header>
+    
+    <!-- main html tag  -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="main-content">
+                    <div class="input-all-content">
+                        <div class="card">
+                            <div>
+                                <img src="./images/triangle.png" alt="">
+                                <h3 class="img-name">Triangle</h3>
+                                <p class="law">Area (A) = <span>0.5</span> &#215 <span id="triangle-base">b</span> &#215 <span id="triangle-height">h</span></span></p>
+                                <div class="input-area">
+                                    <div>
+                                        <input id="triangle-input-base" type="text" placeholder="b">
+                                        <span>cm</span>
+                                    </div>
+                                    <div>
+                                        <input id="triangle-input-height" type="text" placeholder="h">
+                                        <span>cm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="triangle-btn" class="btn btn-calculate">Calculate</button>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div>
+                                <img src="./images/rectangle.png" alt="">
+                                <h3 class="img-name">Rectangle</h3>
+                                <p class="law">Area (A) = <span id="rectangular-width">w</span> &#215 <span id="rectangular-length">b</span> </p>
+                                <div class="input-area">
+                                    <div>
+                                        <input id="rectangular-input-width" type="text" placeholder="w">
+                                        <span>cm</span>
+                                    </div>
+                                    <div>
+                                        <input id="rectangular-input-length" type="text" placeholder="l">
+                                        <span>cm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="rectangular-btn" class="btn btn-calculate">Calculate</button>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div>
+                                <img src="./images/parallelogram.png" alt="">
+                                <h3 class="img-name">Parallelogram</h3>
+                                <p class="law">Area (A) = <span>b</span> &#215 <span>h</span> </p>
+                                <p class="parallelogram-fixed-value">b=<span id="parallelogram-base">10</span>cm, h=<span id="parallelogram-height">12</span>cm</p>
+
+                            </div>
+                            <button id="parallelogram-btn" class="btn btn-calculate">Calculate</button>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div>
+                                <img src="./images/rhombus.png" alt="">
+                                <h3 class="img-name">Rhombus</h3>
+                                <p class="law">Area (A) = 0.5 &#215 <span>d<sub>1</sub></span> &#215 <span id="triangle-height">d<sub>2</sub></span></span></p>
+                                <p class="parallelogram-fixed-value">d<sub>1</sub>=<span  id="rhombusD1">16</span>cm, d<sub>2</sub>=<span  id="rhombusD2">8</span>cm</p>
+
+                            </div>
+                            <button id="rhombus-btn" class="btn btn-calculate">Calculate</button>
+                        </div>
+
+
+                        <div class="card">
+                            <div>
+                                <img src="./images/pentagon.png" alt="">
+                                <h3 class="img-name">Pentagon</h3>
+                                <p class="law">Area (A) = <span>0.5</span> &#215 <span>p</span> &#215 <span id="triangle-height">b</span></span></p>
+                                <p class="parallelogram-fixed-value">p=<span id="pentagon-base">6</span>cm, b=<span id="pentagon-height">10</span>cm</p>
+
+                            </div>
+                            <button id="pentagon-btn" class="btn btn-calculate">Calculate</button>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div>
+                                <img src="./images/ellipse.png" alt="">
+                                <h3 class="img-name">Ellipse</h3>
+                                <p class="law">Area (A) = <span>&#8508;</span>ab</p>
+                                <p class="parallelogram-fixed-value">a = <span id="ellipse-base">10</span>cm, b = <span id="ellipse-height">4</span>cm</p>
+
+                            </div>
+                            <button id="ellipse-btn" class="btn btn-calculate">Calculate</button>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <div class="output-content">
+                            <h3 class="output-content-heading"><span>Area Calculation</span></h3>
+                            <ol id="ol">
+                                <!-- my All output here  -->
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
