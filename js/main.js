@@ -91,6 +91,47 @@ function inputValue(id) {
     return value;
 }
 
+function setInnerText(shape,value) {
+
+    let textSpace = document.getElementById("ol");
+    const html = `<span>cm<sup>2</sup></span> <button class="btn convert">convert to m<sup>2</sup></button>  `;
+    let li = document.createElement('li');
+    li.innerHTML = `${shape}   <span id="${shape}">${value}</span> ${html}`;
+    textSpace.appendChild(li);
+};
+
+
+// function for getInnerText 
+function getInnerText(id) {
+    let value = parseFloat(document.getElementById(id).innerText);
+    return value;
+}
+
+
+// for going another page 
+document.getElementById("blog-btn").addEventListener("click",() => {
+    window.location.href = "./blog.html";
+});
+
+
+
+// various types background 
+let card = document.getElementsByClassName("card");
+for(let item of card){
+    item.addEventListener("mouseenter",() => {
+        let color = '#'+Math.floor(Math.random()*16777215).toString(16);
+        item.style.background = color;
+    });
+};
+
+
+// mouseleave function 
+
+for(let item of card){
+    item.addEventListener("mouseleave",() => {
+        item.style.background = "#fff";
+    });
+};
 
 
 
